@@ -41,8 +41,18 @@ const certifications = [
     issued: "Apr 2024",
     platform: "Coursera",
   },
+  {
+  title: "AWS Cloud Foundations",
+  issued: "2025",
+  platform: "AWS",
+},
 ];
-
+const achievements = [
+  "1st Place – SAMADHAN 2026 Inter-Collegiate Social Ideathon for AQI SATHI",
+  "2nd Place – ITS-A-Hack 2.0 National-Level Hackathon for CivicResource.ai",
+  "1st Prize – SFIT Poster Presentation for F.L.A.R.E",
+  "Published RedRespond research paper in IRJET, Vol. 12, Issue 08 (August 2025)",
+];
 export default function Index() {
   const [scrollY, setScrollY] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
@@ -189,6 +199,10 @@ export default function Index() {
                     A passionate Computer Engineering student at St. Francis Institute of Technology 
                     with a stellar 9.9/10.0 CGPA, specializing in AI/ML honors.
                   </p>
+                  <p className="text-lg text-muted-foreground max-w-3xl mx-auto font-body mt-6">
+  I build AI-powered products, backend services, and practical automation tools
+  using Python, SQL, FastAPI, Django, LangChain, and modern cloud technologies.
+</p>
                 </div>
               </ScrollReveal>
 
@@ -348,6 +362,60 @@ export default function Index() {
                       </div>
                     </div>
                   </ScrollReveal>
+                  <ScrollReveal delay={0.5}>
+  <div className="relative flex items-start space-x-4 md:space-x-8 mb-12">
+    <div className="flex-shrink-0 w-8 h-8 md:w-16 md:h-16 bg-primary rounded-full flex items-center justify-center">
+      <div className="w-4 h-4 md:w-8 md:h-8 bg-background rounded-full"></div>
+    </div>
+    <div className="glass-effect p-6 md:p-8 rounded-2xl flex-1 hover:scale-105 transition-transform duration-300">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+        <h3 className="text-xl font-display font-bold tracking-wide">☕ Java Full Stack Development Intern</h3>
+        <span className="text-primary text-sm font-mono font-semibold">June 2025 – July 2025</span>
+      </div>
+      <h4 className="text-lg text-primary mb-2 font-body font-semibold">Zidio Development</h4>
+      <ul className="text-muted-foreground space-y-2 font-body">
+        <li className="flex items-start"><span className="text-primary mr-2 mt-1">▸</span>Developed REST API endpoints using Java, Spring Boot, Hibernate/JPA, MySQL, and MongoDB</li>
+        <li className="flex items-start"><span className="text-primary mr-2 mt-1">▸</span>Deployed services with Docker and worked on SQL optimization, Redis caching, JUnit, and Mockito</li>
+      </ul>
+    </div>
+  </div>
+</ScrollReveal>
+
+<ScrollReveal delay={0.6}>
+  <div className="relative flex items-start space-x-4 md:space-x-8 mb-12">
+    <div className="flex-shrink-0 w-8 h-8 md:w-16 md:h-16 bg-secondary rounded-full flex items-center justify-center">
+      <div className="w-4 h-4 md:w-8 md:h-8 bg-background rounded-full"></div>
+    </div>
+    <div className="glass-effect p-6 md:p-8 rounded-2xl flex-1 hover:scale-105 transition-transform duration-300">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+        <h3 className="text-xl font-display font-bold tracking-wide">📦 Supply Chain Operations Intern</h3>
+        <span className="text-primary text-sm font-mono font-semibold">October 2026 – Present</span>
+      </div>
+      <h4 className="text-lg text-primary mb-2 font-body font-semibold">Purplle</h4>
+      <ul className="text-muted-foreground space-y-2 font-body">
+        <li className="flex items-start"><span className="text-primary mr-2 mt-1">▸</span>Analyze inventory and shelf-life data using SQL and Metabase to track products nearing expiry</li>
+        <li className="flex items-start"><span className="text-primary mr-2 mt-1">▸</span>Support NTE reporting with procurement, product, warehouse, and store-demand data</li>
+      </ul>
+    </div>
+  </div>
+</ScrollReveal>
+
+<ScrollReveal delay={0.7}>
+  <div className="relative flex items-start space-x-4 md:space-x-8">
+    <div className="flex-shrink-0 w-8 h-8 md:w-16 md:h-16 bg-accent rounded-full flex items-center justify-center">
+      <div className="w-4 h-4 md:w-8 md:h-8 bg-background rounded-full"></div>
+    </div>
+    <div className="glass-effect p-6 md:p-8 rounded-2xl flex-1 hover:scale-105 transition-transform duration-300">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+        <h3 className="text-xl font-display font-bold tracking-wide">💻 Freelance Web Developer</h3>
+        <span className="text-primary text-sm font-mono font-semibold">2024 – Present</span>
+      </div>
+      <ul className="text-muted-foreground space-y-2 font-body">
+        <li className="flex items-start"><span className="text-primary mr-2 mt-1">▸</span>Developed responsive client websites with backend integrations and AWS S3 asset hosting</li>
+      </ul>
+    </div>
+  </div>
+</ScrollReveal>
                 </div>
               </div>
             </div>
@@ -425,6 +493,47 @@ export default function Index() {
                     </div>
                   </div>
                 </ScrollReveal>
+                <ScrollReveal delay={0.3}>
+  <div className="glass-effect p-6 md:p-8 rounded-2xl hover:scale-105 transition-all duration-300 group h-[320px] flex flex-col">
+    <h3 className="text-2xl font-display font-bold group-hover:text-primary transition-colors tracking-wide mb-4">🧠 SIM-OPS</h3>
+    <p className="text-muted-foreground mb-4 font-body leading-relaxed flex-1">
+      Built LangChain workflows for churn analysis, anomaly detection, KPI monitoring, and Slack/Jira task automation with FastAPI and Redis.
+    </p>
+    <div className="flex flex-wrap gap-2 mt-auto">
+      {['Python', 'FastAPI', 'LangChain', 'Supabase', 'Redis', 'Scikit-learn', 'Docker', 'AWS EC2'].map((skill) => (
+        <span key={skill} className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm font-mono">{skill}</span>
+      ))}
+    </div>
+  </div>
+</ScrollReveal>
+
+<ScrollReveal delay={0.4}>
+  <div className="glass-effect p-6 md:p-8 rounded-2xl hover:scale-105 transition-all duration-300 group h-[320px] flex flex-col">
+    <h3 className="text-2xl font-display font-bold group-hover:text-primary transition-colors tracking-wide mb-4">🏙️ CivicResource.ai</h3>
+    <p className="text-muted-foreground mb-4 font-body leading-relaxed flex-1">
+      Built a multilingual civic complaint classification and routing platform with worker tracking, ML-assisted dispatch, and PostgreSQL audit logging. 2nd Place at ITS-A-Hack 2.0.
+    </p>
+    <div className="flex flex-wrap gap-2 mt-auto">
+      {['Python', 'FastAPI', 'Scikit-learn', 'NLP', 'MongoDB', 'PostgreSQL', 'Docker Compose'].map((skill) => (
+        <span key={skill} className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm font-mono">{skill}</span>
+      ))}
+    </div>
+  </div>
+</ScrollReveal>
+
+<ScrollReveal delay={0.5}>
+  <div className="glass-effect p-6 md:p-8 rounded-2xl hover:scale-105 transition-all duration-300 group h-[320px] flex flex-col">
+    <h3 className="text-2xl font-display font-bold group-hover:text-primary transition-colors tracking-wide mb-4">📸 F.L.A.R.E</h3>
+    <p className="text-muted-foreground mb-4 font-body leading-relaxed flex-1">
+      Built facial and location-based attendance with real-time environment detection, computer vision, and AWS S3 media storage. 1st Prize at the SFIT Poster Presentation.
+    </p>
+    <div className="flex flex-wrap gap-2 mt-auto">
+      {['Django', 'OpenCV', 'Computer Vision', 'AWS S3'].map((skill) => (
+        <span key={skill} className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm font-mono">{skill}</span>
+      ))}
+    </div>
+  </div>
+</ScrollReveal>
               </div>
             </div>
           </section>
@@ -460,7 +569,7 @@ export default function Index() {
                   <div className="glass-effect p-6 md:p-8 rounded-2xl text-center hover:scale-105 transition-transform duration-300 h-[500px] flex flex-col">
                     <h3 className="text-2xl font-display font-bold mb-6 text-primary tracking-wide">🛠️ Frameworks</h3>
                     <div className="space-y-3 flex-1 flex flex-col justify-center">
-                      {['Django', 'Spring Boot', 'JavaFX'].map((skill) => (
+                      {['Django', 'FastAPI', 'Spring Boot', 'JavaFX', 'LangChain', 'Celery'].map((skill) => (
                         <div key={skill} className="py-3 px-4 bg-primary/10 rounded-lg hover:bg-primary/20 hover:scale-105 transition-all duration-300 font-mono font-medium tracking-wide cursor-pointer">
                           {skill}
                         </div>
@@ -480,7 +589,7 @@ export default function Index() {
                   <div className="glass-effect p-6 md:p-8 rounded-2xl text-center hover:scale-105 transition-transform duration-300 h-[500px] flex flex-col">
                     <h3 className="text-2xl font-display font-bold mb-6 text-primary tracking-wide">⚙️ Tools & Skills</h3>
                     <div className="space-y-3 flex-1 flex flex-col justify-center">
-                      {['VS Code', 'IntelliJ', 'Postman', 'Git', 'System Design', 'API Integration'].map((skill) => (
+                      {['VS Code', 'IntelliJ', 'Postman', 'Git', 'Docker', 'Docker Compose', 'AWS', 'Redis', 'PostgreSQL', 'MySQL', 'MongoDB', 'Supabase', 'JWT', 'JUnit', 'Mockito'].map((skill) => (
                         <div key={skill} className="py-3 px-4 bg-primary/10 rounded-lg hover:bg-primary/20 hover:scale-105 transition-all duration-300 font-mono font-medium tracking-wide cursor-pointer">
                           {skill}
                         </div>
@@ -495,6 +604,27 @@ export default function Index() {
               </div>
             </div>
           </section>
+
+          <section id="achievements" className="py-20 px-4 sm:px-6 bg-card/20">
+  <div className="max-w-6xl mx-auto">
+    <ScrollReveal>
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-5xl font-display font-bold mb-6 tracking-tight">
+          Achievements & <span className="text-gradient font-fun">Recognition</span> 🏆
+        </h2>
+      </div>
+    </ScrollReveal>
+    <div className="grid md:grid-cols-2 gap-6">
+      {achievements.map((achievement) => (
+        <ScrollReveal key={achievement}>
+          <div className="glass-effect p-6 rounded-2xl text-muted-foreground font-body">
+            <span className="text-primary mr-3">★</span>{achievement}
+          </div>
+        </ScrollReveal>
+      ))}
+    </div>
+  </div>
+</section>
 
           {/* Certifications Section - NEW */}
           <section id="certifications" className="py-20 px-4 sm:px-6">
