@@ -12,7 +12,7 @@ export default function Navigation() {
       setScrolled(window.scrollY > 50);
 
       // Detect active section
-      const sections = ["hero", "about", "experience", "projects", "skills", "contact"];
+      const sections = ["hero", "about", "experience", "projects", "skills", "achievements", "certifications", "contact"];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -42,7 +42,8 @@ export default function Navigation() {
     { id: "experience", label: "Experience" },
     { id: "projects", label: "Projects" },
     { id: "skills", label: "Skills" },
-    { id: "certifications", label: "Certifications" },
+{ id: "achievements", label: "Achievements" },
+{ id: "certifications", label: "Certifications" },
     { id: "contact", label: "Contact" },
   ];
 
@@ -116,7 +117,8 @@ export default function Navigation() {
                     {item.id === 'experience' && '💼'}
                     {item.id === 'projects' && '🚀'}
                     {item.id === 'skills' && '💪'}
-                    {item.id === 'certifications' && '🏆'}
+                    {item.id === "achievements" && "🏆"}
+                    {item.id === 'certifications' && "📜"}
                     {item.id === 'contact' && '📱'}
                   </span>
                   {item.label}
